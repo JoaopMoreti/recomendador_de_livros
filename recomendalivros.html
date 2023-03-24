@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Recomenda Livros</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1 class="pt-5">Recomendador de Livros</h1>
+    <section>
+        <div>
+            <p>Escolha um gênero literário e clique no botão "Recomendar" para poder visualizar os títulos de leitura recomendados para o gênero escolhido</p>
+
+            <input type="radio" name="radio_genero"  id="opcao1">  
+            <label for="opcao1">Fantasia</label>
+
+            <!-- deve sempre por name="" nesse tipo de input de selecionar. Caso queira q apenas uma opção seje disponivel, basta deixar o name deles igual como nesse caso-->
+
+            
+            <input type="radio" name="radio_genero" id="opcao2">
+            <label for="opcao2">Ficção cientifica</label>
+            
+            <input type="radio" name="radio_genero" id="opcao3">
+            <label for="opcao3">Terror</label>
+
+            <input type="radio" name="radio_genero" id="opcao4">
+            <label for="opcao4">Criminal</label>
+
+            <input type="radio" name="radio_genero" id="opcao5">
+            <label for="opcao5">Romantico</label>
+
+            <input type="radio" name="radio_genero" id="opcao6">
+            <label for="opcao6">Não-Ficção(Biografia/Memórias)</label>
+            
+            
+            <p class="pt-4"><input type="button" value="Recomendar" class="btn btn-outline-dark" onclick= "recomendar()"></p>
+            
+        </div>
+
+        <div id="recomenda">
+            Prencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer class="pt-3">
+        <p>&copy;RecomendaLivros</p>
+    </footer>
+    <script src="scriptlivro.js"></script>
+    
+</body>
+</html>
